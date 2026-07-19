@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fire & Fork — Food made for sharing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">FREE DELIVERY ON ORDERS OVER LKR 4,000 <span>•</span> ORDER NOW: 011 234 5678</div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Fire and Fork home"><span>F</span>IRE <b>&</b> FORK</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#story">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions"><a class="location" href="#locations">⌖ <span>Colombo 03</span></a><button class="cart-button" id="cartButton">Cart <strong id="cartCount">0</strong></button><button class="menu-toggle" id="menuToggle">☰</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">BIG FLAVOUR. ZERO FUSS.</p><h1>GOOD FOOD.<br><em>GOOD MOOD.</em></h1><p class="hero-intro">Crispy, juicy, and made fresh to order. Your new favourite comfort food is just a few clicks away.</p><div class="hero-buttons"><a class="button button-dark" href="#menu">Explore the menu <span>→</span></a><a class="text-link" href="#offers">See today's offers <span>↗</span></a></div></div>
+      <div class="hero-art"><div class="burst">HOT<br><small>RIGHT<br>NOW</small></div><div class="hero-image"></div><div class="floating-card"><span class="star">★</span><div><b>4.9 / 5</b><small>LOVED BY LOCALS</small></div></div></div>
+    </section>
+
+    <section class="quick-links"><a href="#menu"><span class="quick-icon">▣</span><div><b>Order online</b><small>Fast delivery to your door</small></div><strong>→</strong></a><a href="#locations"><span class="quick-icon">⌖</span><div><b>Find a restaurant</b><small>Come say hello in person</small></div><strong>→</strong></a><a href="#offers"><span class="quick-icon">%</span><div><b>View offers</b><small>More flavour, less spend</small></div><strong>→</strong></a></section>
+
+    <section class="menu-section" id="menu"><div class="section-heading"><div><p class="eyebrow">THE GOOD STUFF</p><h2>WHAT'S <em>COOKIN'</em></h2></div><a class="text-link" href="#menu-grid">View full menu <span>↗</span></a></div><div class="category-tabs"><button class="active">Best sellers</button><button>Chicken</button><button>Burgers</button><button>Sharing boxes</button><button>Sides & drinks</button></div><div class="menu-grid" id="menu-grid">
+      <article class="food-card"><div class="food-image food-one"><span class="tag">BEST SELLER</span></div><div class="food-info"><h3>The Firebird Burger</h3><p>Buttermilk crispy chicken, house slaw & fire sauce</p><div><b>LKR 1,890</b><button class="add-button" data-item="The Firebird Burger">+</button></div></div></article>
+      <article class="food-card"><div class="food-image food-two"><span class="tag">NEW</span></div><div class="food-info"><h3>Loaded Fire Fries</h3><p>Golden fries, pulled chicken, cheese & our secret sauce</p><div><b>LKR 1,290</b><button class="add-button" data-item="Loaded Fire Fries">+</button></div></div></article>
+      <article class="food-card"><div class="food-image food-three"></div><div class="food-info"><h3>Hot & Crispy Box</h3><p>6 pieces of our signature chicken, fries & a drink</p><div><b>LKR 2,990</b><button class="add-button" data-item="Hot & Crispy Box">+</button></div></div></article>
+    </div></section>
+
+    <section class="offer-banner" id="offers"><div><p class="eyebrow">SHARE THE LOVE</p><h2>MORE PEOPLE.<br><em>MORE CHICKEN.</em></h2><p>Get 20% off when you order any sharing box every Tuesday.</p><a class="button button-light" href="#menu">Get the deal <span>→</span></a></div><div class="offer-art">20<small>% OFF</small></div></section>
+    <section class="story" id="story"><div class="story-image"></div><div><p class="eyebrow">MADE WITH HEART</p><h2>NOT JUST<br><em>FAST FOOD.</em></h2><p>We believe food should be a little messy, a lot delicious, and always made with good ingredients. Fire & Fork started with one kitchen and a big idea: make everyday meals feel like a celebration.</p><a class="text-link" href="#contact">Read our story <span>↗</span></a></div></section>
+  </main>
+  <footer id="contact"><div class="footer-logo"><a class="logo" href="#top"><span>F</span>IRE <b>&</b> FORK</a><p>Good food. Good mood.<br>Every single time.</p></div><div><h4>Explore</h4><a href="#menu">Our menu</a><a href="#offers">Offers</a><a href="#story">Our story</a></div><div id="locations"><h4>Find us</h4><p>Colombo 03<br>Colombo 07<br>Nugegoda</p></div><div><h4>Say hello</h4><p>011 234 5678<br>hello@fireandfork.lk</p><div class="socials"><span>ig</span><span>fb</span><span>tt</span></div></div><div class="copyright">© 2024 Fire & Fork. All rights reserved.</div></footer>
+  <div class="toast" id="toast">Added to your cart</div>
+  <script src="script.js"></script>
+</body>
+</html>
