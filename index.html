@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron &amp; Sage — Modern Bistro &amp; Wood-fired Kitchen</title>
+  <meta name="description" content="Saffron & Sage — seasonal ingredients, wood-fired flavour, and a cellar worth lingering over.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">S&amp;S</span>
+        <span>Saffron &amp; Sage</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Reservations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-gold header-cta" href="#reserve">Book a Table</a>
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="eyebrow light">Modern bistro · est. 2018</p>
+      <h1>Where every plate<br>tells a story</h1>
+      <p class="hero-sub">Seasonal ingredients, wood-fired flavour, and a cellar worth lingering over. Join us in the heart of the city.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn btn-gold">Reserve a Table</a>
+        <a href="#menu" class="btn btn-ghost">Explore the Menu</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>4.9★</strong><span>1,200+ reviews</span></div>
+        <div><strong>12</strong><span>signature dishes</span></div>
+        <div><strong>150+</strong><span>wines in the cellar</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="images/about.jpg" alt="Chef plating a dish">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Our story</p>
+        <h2>Cooking with fire, season and soul</h2>
+        <p>Saffron &amp; Sage began as a tiny supper club and grew into a neighbourhood favourite. Our kitchen works with local farms, a wood-fired hearth, and a simple rule: let great ingredients do the talking.</p>
+        <ul class="feature-list">
+          <li><span class="feature-icon">🔥</span><div><strong>Wood-fired everything</strong><p>Steaks, vegetables and breads kissed by open flame.</p></div></li>
+          <li><span class="feature-icon">🌿</span><div><strong>Local &amp; seasonal</strong><p>Menus that change with the harvest, never against it.</p></div></li>
+          <li><span class="feature-icon">🍷</span><div><strong>A cellar worth exploring</strong><p>150+ labels hand-picked by our sommelier.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section section-dark menu" id="menu">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow light">Our menu</p>
+        <h2>Plates we're proud of</h2>
+        <p class="section-sub">A taste of the season — the full menu changes monthly.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-burrata.jpg" alt="Burrata & heirloom tomato"><span class="price-pill">$14</span><span class="badge badge-star">★ Chef's pick</span></div>
+          <div class="menu-body"><h3>Burrata &amp; Heirloom Tomato</h3><p>Creamy burrata, marinated tomatoes, basil oil, grilled sourdough.</p><small>Starters</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-calamari.jpg" alt="Crispy calamari"><span class="price-pill">$13</span></div>
+          <div class="menu-body"><h3>Crispy Calamari</h3><p>Lightly fried calamari, lemon, smoked paprika aioli.</p><small>Starters</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-pasta.jpg" alt="Truffle tagliatelle"><span class="price-pill">$26</span><span class="badge badge-star">★ Chef's pick</span></div>
+          <div class="menu-body"><h3>Truffle Tagliatelle</h3><p>Fresh egg pasta, black truffle, aged parmesan, brown butter.</p><small>Mains</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-steak.jpg" alt="Charred ribeye"><span class="price-pill">$38</span><span class="badge badge-star">★ Chef's pick</span></div>
+          <div class="menu-body"><h3>Charred Ribeye</h3><p>300g wood-fired ribeye, rosemary butter, roasted potatoes.</p><small>Mains</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-salmon.jpg" alt="Miso glazed salmon"><span class="price-pill">$29</span></div>
+          <div class="menu-body"><h3>Miso Glazed Salmon</h3><p>White miso glaze, charred greens, sesame, pickled ginger.</p><small>Mains</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-risotto.jpg" alt="Wild mushroom risotto"><span class="price-pill">$22</span><span class="badge badge-out">Sold out</span></div>
+          <div class="menu-body"><h3>Wild Mushroom Risotto</h3><p>Carnaroli rice, porcini, thyme, shaved parmesan.</p><small>Mains</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-fondant.jpg" alt="Chocolate fondant"><span class="price-pill">$12</span></div>
+          <div class="menu-body"><h3>Chocolate Fondant</h3><p>Molten 70% chocolate, vanilla bean ice cream, berry coulis.</p><small>Desserts</small></div>
+        </article>
+        <article class="menu-card">
+          <div class="menu-media"><img src="images/dish-pannacotta.jpg" alt="Vanilla panna cotta"><span class="price-pill">$11</span></div>
+          <div class="menu-body"><h3>Vanilla Panna Cotta</h3><p>Madagascar vanilla, macerated berries, fresh mint.</p><small>Desserts</small></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Gallery</p>
+        <h2>A peek inside</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-wide"><img src="images/hero.jpg" alt="The dining room"></figure>
+        <figure><img src="images/dish-pasta.jpg" alt="Truffle tagliatelle"></figure>
+        <figure><img src="images/dish-steak.jpg" alt="Charred ribeye"></figure>
+        <figure class="g-tall"><img src="images/about.jpg" alt="Chef at work"></figure>
+        <figure><img src="images/dish-fondant.jpg" alt="Chocolate fondant"></figure>
+        <figure><img src="images/dish-burrata.jpg" alt="Burrata & heirloom tomato"></figure>
+        <figure class="g-wide"><img src="images/dish-salmon.jpg" alt="Miso glazed salmon"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-cream testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Kind words</p>
+        <h2>What guests say</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p>“The truffle tagliatelle is reason enough to cross town. Service is warm, the room glows, and the wine list rewards curiosity.”</p>
+          <footer><strong>Amelia R.</strong><span>Food &amp; Wine Weekly</span></footer>
+        </blockquote>
+        <blockquote class="t-card featured">
+          <div class="t-stars">★★★★★</div>
+          <p>“Our Friday-night ritual. The old fashioned at the bar, then the ribeye off the fire. Never once disappointing.”</p>
+          <footer><strong>Dev P.</strong><span>Regular since 2022</span></footer>
+        </blockquote>
+        <blockquote class="t-card">
+          <div class="t-stars">★★★★☆</div>
+          <p>“They made our anniversary feel special without being fussy — thoughtful touches, perfect pacing, and that panna cotta!”</p>
+          <footer><strong>Sofia M.</strong><span>Anniversary dinner</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION ============ -->
+  <section class="section reserve" id="reserve">
+    <div class="container reserve-card">
+      <div class="reserve-info">
+        <p class="eyebrow light">Reservations</p>
+        <h2>Book your table</h2>
+        <p>Walk-ins welcome at the bar. For parties of 9 or more, give us a call and we'll take care of you.</p>
+        <ul class="hours-list">
+          <li><span>Mon – Thu</span><span>12:00 – 22:00</span></li>
+          <li><span>Fri – Sat</span><span>12:00 – 23:30</span></li>
+          <li><span>Sunday</span><span>13:00 – 21:00</span></li>
+        </ul>
+        <p class="reserve-phone">📞 (555) 012-3456</p>
+      </div>
+      <form class="reserve-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-field"><label for="res-name">Full name</label><input id="res-name" type="text" placeholder="Jane Appleseed" required></div>
+          <div class="form-field"><label for="res-phone">Phone</label><input id="res-phone" type="tel" placeholder="(555) 000-0000" required></div>
+        </div>
+        <div class="form-field"><label for="res-email">Email</label><input id="res-email" type="email" placeholder="you@example.com" required></div>
+        <div class="form-row">
+          <div class="form-field"><label for="res-date">Date</label><input id="res-date" type="date" required></div>
+          <div class="form-field">
+            <label for="res-time">Time</label>
+            <select id="res-time" required>
+              <option value="">Select time</option>
+              <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+              <option>18:00</option><option>18:30</option><option>19:00</option><option selected>19:30</option>
+              <option>20:00</option><option>20:30</option><option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="res-guests">Guests</label>
+            <select id="res-guests" required>
+              <option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option>
+              <option>5 guests</option><option>6 guests</option><option>7 guests</option><option>8 guests</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="res-occasion">Occasion</label>
+            <select id="res-occasion">
+              <option>None</option><option>Birthday</option><option>Anniversary</option><option>Date night</option><option>Business</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field"><label for="res-notes">Special requests</label><textarea id="res-notes" rows="3" placeholder="Window table, allergies, surprises…"></textarea></div>
+        <button type="submit" class="btn btn-gold btn-block">Request Reservation</button>
+        <p class="form-note">Sample form — no data is sent anywhere.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand light" href="#home"><span class="brand-mark">S&amp;S</span><span>Saffron &amp; Sage</span></a>
+        <p class="footer-blurb">Modern bistro &amp; wood-fired kitchen. Seasonal plates, natural wines, and a warm room to linger in.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit us</h4>
+        <p>42 Rosemary Lane<br>Portland, OR 97204</p>
+        <p>(555) 012-3456<br>hello@saffronsage.example</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Thu · 12:00 – 22:00<br>Fri – Sat · 12:00 – 23:30<br>Sunday · 13:00 – 21:00</p>
+        <a class="btn btn-outline-light footer-cta" href="#reserve">Book a Table</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Saffron &amp; Sage — sample site.</span>
+      <a href="admin.html">Admin Panel →</a>
+    </div>
+  </footer>
+
+</body>
+</html>

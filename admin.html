@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — Saffron &amp; Sage</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="admin-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">S&amp;S</span>
+      <span>Saffron &amp; Sage</span>
+    </a>
+    <nav class="side-nav">
+      <a class="nav-item active" href="admin.html">📊 Dashboard</a>
+      <a class="nav-item" href="#menu-section">🍽️ Menu <span class="nav-badge">8</span></a>
+      <a class="nav-item" href="#res-section">📅 Reservations <span class="nav-badge gold">2</span></a>
+      <a class="nav-item" href="#settings-section">⚙️ Settings</a>
+    </nav>
+    <div class="side-bottom">
+      <a class="nav-item" href="index.html">🌐 View website</a>
+      <a class="nav-item logout" href="index.html">🚪 Log out</a>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="admin-main">
+
+    <header class="topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Welcome back, Admin · Saturday, 19 July 2026</p>
+      </div>
+      <div class="topbar-actions">
+        <a class="btn btn-ghost-dark" href="index.html">View site</a>
+        <span class="avatar" title="Admin">A</span>
+      </div>
+    </header>
+
+    <!-- ---- stat cards ---- -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">🍽️</span>
+        <div><strong>8</strong><span>Menu items</span></div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">✅</span>
+        <div><strong>7</strong><span>Available now</span></div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">⏳</span>
+        <div><strong>2</strong><span>Pending reservations</span></div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📩</span>
+        <div><strong>1</strong><span>Unread messages</span></div>
+      </div>
+    </section>
+
+    <!-- ---- menu management ---- -->
+    <section class="panel" id="menu-section">
+      <div class="panel-head">
+        <h2>Menu management</h2>
+        <button class="btn btn-gold">+ Add item</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Dish</th><th>Category</th><th>Price</th><th>Available</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="dish-cell"><img src="images/dish-burrata.jpg" alt=""> <div><strong>Burrata &amp; Heirloom Tomato</strong><small>Creamy burrata, basil oil…</small></div></div></td>
+              <td>Starters</td><td>$14.00</td>
+              <td><span class="status-badge ok">Yes</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td><div class="dish-cell"><img src="images/dish-pasta.jpg" alt=""> <div><strong>Truffle Tagliatelle</strong><small>Black truffle, parmesan…</small></div></div></td>
+              <td>Mains</td><td>$26.00</td>
+              <td><span class="status-badge ok">Yes</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td><div class="dish-cell"><img src="images/dish-steak.jpg" alt=""> <div><strong>Charred Ribeye</strong><small>Wood-fired, rosemary butter…</small></div></div></td>
+              <td>Mains</td><td>$38.00</td>
+              <td><span class="status-badge ok">Yes</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td><div class="dish-cell"><img src="images/dish-risotto.jpg" alt=""> <div><strong>Wild Mushroom Risotto</strong><small>Porcini, thyme, parmesan…</small></div></div></td>
+              <td>Mains</td><td>$22.00</td>
+              <td><span class="status-badge off">Sold out</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Delete</button></td>
+            </tr>
+            <tr>
+              <td><div class="dish-cell"><img src="images/dish-fondant.jpg" alt=""> <div><strong>Chocolate Fondant</strong><small>Molten 70% chocolate…</small></div></div></td>
+              <td>Desserts</td><td>$12.00</td>
+              <td><span class="status-badge ok">Yes</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ---- reservations ---- -->
+    <section class="panel" id="res-section">
+      <div class="panel-head">
+        <h2>Reservations</h2>
+        <div class="filter-pills">
+          <span class="pill active">All (4)</span>
+          <span class="pill">Pending (2)</span>
+          <span class="pill">Confirmed (1)</span>
+          <span class="pill">Cancelled (1)</span>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>When</th><th>Guest</th><th>Party</th><th>Contact</th><th>Status</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sun, 20 Jul</strong><br><small>19:30</small></td>
+              <td>Olivia Bennett<br><small>Date night</small></td>
+              <td>2</td>
+              <td>(555) 867-2201<br><small>olivia.b@example.com</small></td>
+              <td><span class="status-badge pending">Pending</span></td>
+              <td><button class="btn-small ok">Confirm</button> <button class="btn-small danger">Cancel</button></td>
+            </tr>
+            <tr>
+              <td><strong>Tue, 22 Jul</strong><br><small>20:00</small></td>
+              <td>Marcus Chen<br><small>Anniversary</small></td>
+              <td>4</td>
+              <td>(555) 341-9908<br><small>m.chen@example.com</small></td>
+              <td><span class="status-badge ok">Confirmed</span></td>
+              <td><button class="btn-small">Edit</button> <button class="btn-small danger">Cancel</button></td>
+            </tr>
+            <tr>
+              <td><strong>Fri, 25 Jul</strong><br><small>18:30</small></td>
+              <td>Priya Nair<br><small>Business</small></td>
+              <td>6</td>
+              <td>(555) 210-4477<br><small>priya.n@example.com</small></td>
+              <td><span class="status-badge pending">Pending</span></td>
+              <td><button class="btn-small ok">Confirm</button> <button class="btn-small danger">Cancel</button></td>
+            </tr>
+            <tr>
+              <td><strong>Sat, 12 Jul</strong><br><small>21:00</small></td>
+              <td>Tom Alvarez</td>
+              <td>2</td>
+              <td>(555) 991-0032<br><small>tom.a@example.com</small></td>
+              <td><span class="status-badge off">Cancelled</span></td>
+              <td><button class="btn-small danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ---- settings ---- -->
+    <section class="panel" id="settings-section">
+      <div class="panel-head">
+        <h2>Site settings</h2>
+      </div>
+      <form class="settings-form" action="admin.html">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="s-name">Restaurant name</label>
+            <input id="s-name" type="text" value="Saffron &amp; Sage">
+          </div>
+          <div class="form-field">
+            <label for="s-phone">Phone</label>
+            <input id="s-phone" type="tel" value="(555) 012-3456">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="s-email">Email</label>
+            <input id="s-email" type="email" value="hello@saffronsage.example">
+          </div>
+          <div class="form-field">
+            <label for="s-address">Address</label>
+            <input id="s-address" type="text" value="42 Rosemary Lane, Portland, OR 97204">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="s-announcement">Announcement banner</label>
+          <input id="s-announcement" type="text" value="Live jazz every Friday night — reserve your table for the weekend!">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-gold">Save changes</button>
+          <button type="button" class="btn btn-ghost-dark">Reset demo data</button>
+        </div>
+        <p class="form-note">Sample form — changes are not stored anywhere.</p>
+      </form>
+    </section>
+
+    <footer class="admin-footer">
+      <span>Saffron &amp; Sage admin · sample demo</span>
+      <a href="index.html">← Back to website</a>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
